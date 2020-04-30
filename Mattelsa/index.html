@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>Tiendas</title>
+        <meta name="description" content="Mattelsa Culture - Leisure - Clothing" />
+        <meta name="keywords" content="Mattelsa, Clothing, Culture, Leisure" />
+        <meta name="robots" content="INDEX,FOLLOW" />
+        <meta name="theme-color" content="#000000">
+        <link rel="icon" href="https://www.mattelsa.net/skin/frontend/mattelsa/tema2/favicon.ico" type="image/x-icon" />
+        <script src="js/indexmatt.js"></script>
+        <script src="js/tiendasmatt.js"></script>  
+        <link rel="stylesheet" href="style/style.css">
+        <link href="http://allfont.es/allfont.css?fonts=santana-black" rel="stylesheet" type="text/css" />
+        
+    </head>
+
+    <body>
+        <div class="title">
+            ENCUENTRA TU TIENDA
+        </div>
+        <div class="store-phone-number"><i class="fab fa-whatsapp"></i>
+            <a href= "https://api.whatsapp.com/send?phone=573005071000" target="_blank"> 3005071000</a>
+            <br>
+            <b style="color: #000000; font-size: 15px;">PBX:</b> <a href= "tel:018000413757" target="_blank" style="color: #000000; font-size: 15px;"> 01 8000 41 37 57</a>
+        </div>
+        <div class="indicador-ciudad"> Todas </div>
+        <div class="search-container">
+            <div class="search">
+                <div class="w3-dropdown-hover">
+                    <button id="zip-code-input" class="w3-button w3-black" style="color:#ffffff;">SELECCIONA TU CIUDAD</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="javascript:void(0)" onclick="window.value= 1; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Armenia'" class="w3-bar-item w3-button">Armenia</a>
+                        <a href="javascript:void(0)" onclick="window.value= 2; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Barrancabermeja'" class="w3-bar-item w3-button">Barrancabermeja</a>
+                        <a href="javascript:void(0)" onclick="window.value= 3; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Barranquilla'" class="w3-bar-item w3-button">Barranquilla</a>
+                        <a href="javascript:void(0)" onclick="window.value= 4; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Bogotá'" class="w3-bar-item w3-button">Bogotá</a>
+                        <a href="javascript:void(0)" onclick="window.value= 5; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Bucaramanga'" class="w3-bar-item w3-button">Bucaramanga</a>
+                        <a href="javascript:void(0)" onclick="window.value= 6; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Buenaventura'" class="w3-bar-item w3-button">Buenaventura</a>
+                        <a href="javascript:void(0)" onclick="window.value= 7; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Cali'" class="w3-bar-item w3-button">Cali</a>
+                        <a href="javascript:void(0)" onclick="window.value= 8; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Cartagena'" class="w3-bar-item w3-button">Cartagena</a>
+                        <a href="javascript:void(0)" onclick="window.value= 9; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Cúcuta'" class="w3-bar-item w3-button">Cúcuta</a>
+                        <a href="javascript:void(0)" onclick="window.value= 10; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Florencia'"  class="w3-bar-item w3-button">Florencia</a>
+                        <a href="javascript:void(0)" onclick="window.value= 11; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Ibagué'"  class="w3-bar-item w3-button">Ibagué</a>
+                        <a href="javascript:void(0)" onclick="window.value= 12; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Manizales'"  class="w3-bar-item w3-button">Manizales</a>
+                        <a href="javascript:void(0)" onclick="window.value= 14; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Medellín'"  class="w3-bar-item w3-button">Medellín</a>
+                        <a href="javascript:void(0)" onclick="window.value= 15; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Montería'"  class="w3-bar-item w3-button">Montería</a>
+                        <a href="javascript:void(0)" onclick="window.value= 16; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Neiva'"  class="w3-bar-item w3-button">Neiva</a>
+                        <a href="javascript:void(0)" onclick="window.value= 17; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Pasto'"  class="w3-bar-item w3-button">Pasto</a>
+                        <a href="javascript:void(0)" onclick="window.value= 18; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Pereira'"  class="w3-bar-item w3-button">Pereira</a>
+                        <a href="javascript:void(0)" onclick="window.value= 19; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Popayán'"  class="w3-bar-item w3-button">Popayán</a>
+                        <a href="javascript:void(0)" onclick="window.value= 20; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Quibdó'"  class="w3-bar-item w3-button">Quibdó</a>
+                        <a href="javascript:void(0)" onclick="window.value= 21; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Rionegro'"  class="w3-bar-item w3-button">Rionegro</a>
+                        <a href="javascript:void(0)" onclick="window.value= 22; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'San Andrés'"  class="w3-bar-item w3-button">San Andrés</a>
+                        <a href="javascript:void(0)" onclick="window.value= 23; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Santa Marta'"  class="w3-bar-item w3-button">Santa Marta</a>
+                        <a href="javascript:void(0)" onclick="window.value= 24; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Tuluá'"  class="w3-bar-item w3-button">Tuluá</a>
+                        <a href="javascript:void(0)" onclick="window.value= 25; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Tunja'"  class="w3-bar-item w3-button">Tunja</a>
+                        <a href="javascript:void(0)" onclick="window.value= 26; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Valledupar'"  class="w3-bar-item w3-button">Valledupar</a>
+                        <a href="javascript:void(0)" onclick="window.value= 27; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Villavicencio'"  class="w3-bar-item w3-button">Villavicencio</a>
+                        <a href="javascript:void(0)" onclick="window.value= 28; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Yopal'"  class="w3-bar-item w3-button">Yopal</a>
+                        <a href="javascript:void(0)" onclick="window.value= 13; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Más Tiendas'"  class="w3-bar-item w3-button">Ver Más Tiendas</a>
+                        <a href="javascript:void(0)" onclick="window.value= null; searchStores(); document.querySelector('.indicador-ciudad').innerHTML = 'Todas'"  class="w3-bar-item w3-button">Todas las Tiendas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stores-list-container">
+            <div class="stores-list">
+                <div class="store-container-background">
+                    <div class="store-info-container">
+                        <div class="store-address">
+                            <span><img src ="imagenes-tiendas/6_matt.jpg"></span>
+                            <span><b>Barrancabermeja</b></span>
+                            <span style="font-size: 0.8em;">Carrera 24 # 52b-53</span>
+                        </div>
+                    </div>
+                    <div class="store-number-container">
+                        <div class="store-number">
+                            1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRXGn3sPii4c39NSY_Pj4xy4F4kpfkdxQ&callback=initMap">
+        </script>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WC26CMP"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    </body>
+</html>
